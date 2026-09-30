@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "finochat",
+  "owner": {
+    "name": "Novalycs",
+    "url": "https://auditablebooks.com"
+  },
+  "description": "Auditable Books for Claude Code — answer a client's accounting question from their QuickBooks Online books, with the evidence attached.",
+  "plugins": [
+    {
+      "name": "auditable-books",
+      "source": "./plugins/auditable-books",
+      "description": "Bring Claude to your clients' books: list your connected QuickBooks Online clients and answer their questions with ledger evidence and Intuit trace ids. Read-only. Requires an Auditable Books account.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["accounting", "bookkeeping", "quickbooks", "qbo", "cpa", "audit", "evidence"]
+    }
+  ]
+}

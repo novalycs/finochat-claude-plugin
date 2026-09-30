@@ -1,0 +1,30 @@
+{
+  "name": "auditable-books",
+  "displayName": "Auditable Books",
+  "version": "0.1.0",
+  "description": "Answer your clients' accounting questions from their QuickBooks Online books, with the evidence attached. Read-only.",
+  "author": {
+    "name": "Novalycs",
+    "email": "support@auditablebooks.com",
+    "url": "https://auditablebooks.com"
+  },
+  "homepage": "https://auditablebooks.com",
+  "repository": "https://github.com/novalycs/finochat-claude-plugin",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": ["accounting", "bookkeeping", "quickbooks", "qbo", "cpa", "audit", "evidence"],
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "Auditable Books token",
+      "description": "Create one in Auditable Books → Settings → Claude Code, then paste it here. It starts with abk_.",
+      "sensitive": true,
+      "required": true
+    },
+    "api_url": {
+      "type": "string",
+      "title": "API host",
+      "description": "Leave as is unless Auditable Books support tells you otherwise.",
+      "default": "https://api.auditablebooks.com"
+    }
+  }
+}

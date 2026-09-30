@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "auditable-books": {
+      "type": "http",
+      "url": "${user_config.api_url}/plugin/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
+    }
+  }
+}
